@@ -20,5 +20,10 @@ const router : Router  = createRouter({
     }
   ],
 })
+router.beforeEach((to, from,next)=>{
+  from.name ? console.log("Переход c route: ",from.name) : null
+  to.name ? console.log("Переход на route: ",to.name) : null
+  next()
+})
 
 export default router
