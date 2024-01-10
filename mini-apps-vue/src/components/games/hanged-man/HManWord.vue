@@ -1,18 +1,16 @@
 <script lang="ts" setup>
-import { defineProps } from 'vue'
-interface Props {
-  word: string,
-  correctLetters: string[]
-}
-defineProps<Props>()
+import {useHangmanStore} from "@/stores/module-hangman";
+
+const store = useHangmanStore()
+
 </script>
 
 <template>
   <div class="flex gap-1">
-    <span v-for="(letter, index) in word"
+    <span v-for="(letter, index) in store.word"
           :key="index"
           class="w-5 p-0.5 border-b-2 border-b-emerald-600 text-center min-h-4">
-      {{ correctLetters.includes(letter) ? letter : "\n" }}
+      {{ store.correctLetters.includes(letter) ? letter.toUpperCase() : "\n" }}
     </span>
   </div>
 </template>

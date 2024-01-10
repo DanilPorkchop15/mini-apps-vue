@@ -1,15 +1,12 @@
 <script lang="ts" setup>
-import { defineProps } from 'vue'
-interface Props {
-  wrongLetters: string[]
-}
-defineProps<Props>()
+import {useHangmanStore} from "@/stores/module-hangman";
+const store = useHangmanStore()
 </script>
 
 <template>
   <div class="flex flex-col gap-2">
     <h4>Неправильные буквы</h4>
-    <p><span v-for="(letter, index) in wrongLetters" :key="letter">{{ index === wrongLetters.length - 1 ? letter : `${letter}, `}}</span></p>
+    <p><span v-for="(letter, index) in store.wrongLetters" :key="letter">{{ index === store.wrongLetters.length - 1 ? letter : `${letter}, `}}</span></p>
   </div>
 </template>
 
