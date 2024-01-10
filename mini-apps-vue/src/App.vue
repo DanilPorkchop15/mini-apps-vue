@@ -1,9 +1,12 @@
 <script lang="ts" setup>
-import "@/assets/tailwind.css"
 </script>
 
 <template>
-  <router-view/>
+  <v-app>
+    <v-theme-provider>
+      <router-view/>
+    </v-theme-provider>
+  </v-app>
 </template>
 
 <style lang="scss" scoped>
