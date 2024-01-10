@@ -1,0 +1,68 @@
+// Font
+$mainFont: 'Montserrat', Helvetica, Arial, sans-serif;
+$secondFont: 'Montserrat Alternates', Helvetica, Arial, sans-serif;
+
+// Size
+$mainFontSize: 16px;
+$hintFontSize: 12px;
+$H5FontSize: 18px;
+$H4FontSize: 24px;
+$H3FontSize: 32px;
+$H2FontSize: 48px;
+$H1FontSize: 64px;
+$mainFontWeight: 400;
+$mainLineHeight: 1.4;
+
+$color1: #fff;
+$color1-2: #F3FFFF;
+$color1-3: #FDFFF0;
+$color1-4: #F4F4F4;
+$color2: #478DF7;
+$color3: #95D2FF;
+$color4: #2D698E;
+$color5: #263B85;
+$color6: #AC4646;
+$color7: #FF0016;
+
+
+$mainFontColor: #292D32;
+$hintFontColor: #CBCBCB;
+$altFontColor: #fff;
+$linkColor: #327ED8;
+
+
+$lgDesktopWidth: 1400px;
+$desktopWidth: 1280px;
+$smDesktopWidth: 1024px;
+$tableWidth: 768px;
+$smTableWidth: 640px;
+$phoneWidth: 480px;
+$smPhoneWidth: 320px;
+
+// this way will help u to switch colors if theme is change
+
+// helpers
+$g-0: #ffffff;
+$g-999: #000000;
+
+// Main color
+$default-color: #ffffff;
+$primary-color: #4468e0;
+$success-color: #26de81;
+$danger-color: #fc5c65;
+$warning-color: #fed330;
+$light-color: #999999;
+$purple-color: #8854d0;
+$purple-color-100: #aa8ad6;
+
+// Neutral Color
+$neutral-primary: #303133;
+$neutral-regular: #606266;
+$neutral-secondary: #909399;
+$neutral-placeholder: #c0c4cc;
+
+// Border Color
+$border-base: #dcdfe6;
+$border-light: #e4e7ed;
+$border-lighter: #ebeef5;
+$border-lightex: #f2f6fc;

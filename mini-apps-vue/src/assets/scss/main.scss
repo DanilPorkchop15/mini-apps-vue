@@ -1,0 +1,53 @@
+@import 'utils/utils';
+
+html {
+  font-family: $mainFont !important;
+  color: $mainFontColor !important;
+  font-size: $mainFontSize !important;
+  line-height: $mainLineHeight !important;
+}
+h1 {
+  @include fontSetting($mainFont, $H1FontSize, 800);
+  letter-spacing: 3px;
+}
+h2 {
+  @include fontSetting($secondFont, $H2FontSize, 600);
+}
+h3 {
+  @include fontSetting($mainFont, $H3FontSize, 700);
+}
+h4 {
+  @include fontSetting($mainFont, $H4FontSize, 600);
+}
+h5 {
+  @include fontSetting($mainFont, $H5FontSize, 500);
+}
+
+button{
+  cursor: pointer;
+}
+
+body {
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+.page{
+  min-height: 765px;
+}
+
+.link {
+  color: $linkColor;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+a {
+  color: $mainFontColor
+}
